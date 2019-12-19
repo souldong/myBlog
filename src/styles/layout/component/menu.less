@@ -1,0 +1,50 @@
+a{
+    color: unset;
+}
+.menu{
+    width: 100%;
+    color: "#1660FF";
+    .menu-submenu{
+        position: relative;
+        padding: 14px 30px;
+        color: #1e1e27;
+        transition: all 0.5s;
+        .menu-line{
+            transition: all 0.5s;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: inline-block;
+            height: 100%;
+            width: 4px;
+        }
+        .ivu-icon{
+            display: inline-block;
+            width: 30px;
+            border-radius: 2px;
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        .menu-submenu-label{
+            font-size: 14px;
+            color: #4a4949;
+        }
+        &:hover{
+            color: #1f65ff;
+        }
+        &:hover .menu-submenu-label{
+            color: #1f65ff;
+        }
+        &:hover .menu-line{
+            background-color: #1660ff;
+        }
+    }
+    .active{
+        .menu-line{
+            background-color: #1660ff;
+        }
+        .menu-submenu-label{
+            color: #1f65ff;
+        }
+    }
+}

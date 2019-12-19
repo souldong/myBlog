@@ -1,0 +1,40 @@
+.layout {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background: unset;
+  border-radius: 4px;
+  overflow-y: auto;
+}
+
+  .layout::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width : 3px;  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+  }
+  .layout::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background   : #ccc;
+  }
+  .layout::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background   : #ededed;
+  }
+.background {
+  // position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url("../../assets/images/bolg_bg.webp") no-repeat;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  transition: 1s opacity linear;
+}
+.SE0fn {
+  padding: 10rem;
+}
