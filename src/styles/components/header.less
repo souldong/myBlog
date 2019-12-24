@@ -5,6 +5,7 @@
   justify-content: space-between;
   background: transparent;
   transition: all .8s;
+  z-index: 99;
   &:hover{
     box-shadow: 0 1px 40px -8px rgba(0, 0, 0, 0.5);
     background-color: #fff;
@@ -38,10 +39,46 @@
     > .title span::selection {
       background-color: red; /* This hides the selection */
     }
-    .ivu-menu-horizontal{
-      margin-right: 3em;
-      &::after{
-        height: 0px;
+    nav{
+      ul{
+        display: flex;
+        list-style: none;
+        li{
+          margin-right: 28px;
+          a{
+            position: relative;
+            height: 60px;
+            line-height: 60px;
+            color: #333;
+            display: inline-block;
+            .ivu-icon {
+              font-size: 18px;
+              margin-right: 8px;
+            }
+            span{
+              text-transform: capitalize;
+              transition: all 500ms linear;
+              font: 0.8rem 'Ubuntu', sans-serif;
+              font-weight: bold;
+            }
+            &::after{
+              position: absolute;
+              content: '';
+              width: 0;
+              height: 4px;
+              background: #ffa500;
+              bottom: 0;
+              left: 0;
+              transition: all 300ms ease;
+            }
+            &:hover{
+              color: #ffa500;
+              &::after{
+                width: 100%;
+              }
+            }
+          }
+        }
       }
     }
 }

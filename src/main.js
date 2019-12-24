@@ -6,8 +6,17 @@ import ViewUI from 'view-design'
 import 'view-design/dist/styles/iview.css'
 import '@/assets/style/normalize.css'
 
-Vue.use( ViewUI );
+import VueParticles from 'vue-particles'
+Vue.use(VueParticles)
+
+Vue.use(ViewUI)
 Vue.config.productionTip = false
+router.beforeEach((to, from, next) => {
+  if (to.meta.auth) {
+    next('/home')
+  }
+  next()
+})
 
 new Vue({
   store,

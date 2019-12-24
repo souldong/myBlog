@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-      <layout></layout>
+    <layout></layout>
   </div>
 </template>
 
 <script>
-import layout from './views/layout/index';
-export default{
-  components:{
+import layout from './views/layout/index'
+export default {
+  components: {
     layout
   }
 }

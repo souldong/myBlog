@@ -353,6 +353,9 @@
     background-color: #E9ECF4;
   }
 
+  body{
+    cursor: url("../images/normal.png"),auto;
+  }
 
   .ivu-layout{
     background-color: unset;
