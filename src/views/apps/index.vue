@@ -1,5 +1,5 @@
 <template>
     <div>
-        文章
+        apps
     </div>
 </template>
