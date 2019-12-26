@@ -1,0 +1,46 @@
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url("../../assets/images/sea.jpg") no-repeat;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: 1s opacity linear;
+  ._3hviM {
+    position: absolute;
+    bottom: 26vh;
+    left: 50%;
+    margin: 0px;
+    transform: translate(-50%, 0);
+    span {
+      font-size: 80px;
+      font-family: lobster two;
+      color: white;
+      text-shadow: 0 8px 0 darken(rgb(30, 130, 230), 9);
+    }
+  }
+  .inform {
+    position: absolute;
+    z-index: 1;
+    max-width: 27rem;
+    margin: 78vh auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .inform-text {
+    display: block;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #eaeadf;
+  }
+}

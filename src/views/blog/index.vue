@@ -1,45 +1,28 @@
 <template>
   <div class="bolg">
     <section class="background">
-      <span>Bolg</span>
+      <span>Tech, Music and Life.</span>
     </section>
-    <section class="SE0fn">
-      Bolg
-    </section>
+    <div class="SE0fn">
+      <section>
+        <m-article :articleList="10"></m-article>
+      </section>
+      <aside>
+        <section>top10</section>
+        <section>标签</section>
+      </aside>
+    </div>
   </div>
 </template>
 <script>
-export default {}
+import mArticle from '@/components/article.vue'
+export default {
+  components: {
+    mArticle
+  }
+}
 </script>
 
 <style lang="less" scoped>
-.background {
-  position: relative;
-  display: flex;
-  background: url("../../assets/images/blog_page_1.webp") no-repeat;
-  justify-content: center;
-  padding-top: 15rem;
-  width: 100%;
-  height: 68vh;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  span{
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    font-weight: bolder;
-    font-size: 34px;
-    font-family: -apple-system;
-    transform: translate(-50%, 0);
-    background: linear-gradient(to left, #c4987a 33%, #ffd5bf 73%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-font-smoothing: antialiased;
-  }
-}
-.SE0fn {
-  padding: 10rem;
-}
+@import "../../styles/views/blog.less";
 </style>

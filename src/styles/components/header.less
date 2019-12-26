@@ -11,8 +11,16 @@
     background-color: #fff;
     opacity: 1;
   }
+  .logo{
+    display: inline-block;
+    width: 200px;
+    margin-top: 10px;
+    height: 40px;
+    background: url('../../assets/images/logo.png') no-repeat;
+    background-size: contain;
+  }
   > .title{
-       line-height: 60px;
+       line-height: 20px;
        text-indent: 40px;
        font-size: 1.5em;
        color: #000;
@@ -49,7 +57,7 @@
             position: relative;
             height: 60px;
             line-height: 60px;
-            color: #333;
+            color: #666;
             display: inline-block;
             .ivu-icon {
               font-size: 18px;
@@ -58,7 +66,7 @@
             span{
               text-transform: capitalize;
               transition: all 500ms linear;
-              font: 0.8rem 'Ubuntu', sans-serif;
+              font: 1rem 'Ubuntu', sans-serif;
               font-weight: bold;
             }
             &::after{
@@ -82,4 +90,8 @@
       }
     }
 }
-  
+.head-active{
+  box-shadow: 0 1px 40px -8px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  opacity: 1;
+}

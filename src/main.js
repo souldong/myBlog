@@ -5,6 +5,7 @@ import router from './router'
 import ViewUI from 'view-design'
 import 'view-design/dist/styles/iview.css'
 import '@/assets/style/normalize.css'
+import 'hover.css'
 
 import VueParticles from 'vue-particles'
 Vue.use(VueParticles)
