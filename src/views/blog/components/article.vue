@@ -10,6 +10,13 @@
           &nbsp;&nbsp;Released&nbsp;{{articleItem.time}}
         </p>
         <h3 class="container-text-title">{{articleItem.title}}</h3>
+        <div class="_1IC5o">
+          <span><Icon type="ios-eye-outline" />&nbsp;&nbsp;&nbsp;&nbsp;{{articleItem.PV}} PV</span>
+          <span class="cur"><Icon type="ios-chatboxes-outline" />&nbsp;&nbsp;&nbsp;&nbsp;{{articleItem.like}} Likes</span>
+          <span class="cur"><Icon type="ios-folder-outline" />&nbsp;&nbsp;&nbsp;&nbsp;{{articleItem.languageType}}</span>
+        </div>
+        <p class="text">{{articleItem.detaile}}</p>
+        <div class="more"><Icon type="ios-more" /></div>
       </div>
     </article>
   </div>
@@ -41,5 +48,5 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '../styles/components/article.less';
+  @import '../../../styles/components/article.less';
 </style>

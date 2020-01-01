@@ -7,7 +7,7 @@ const admin = [
   {
     path: '/',
     name: 'home',
-    redirect:'home',
+    redirect: 'home',
     component: () => import('@/views/home/index.vue')
   },
   {
@@ -39,12 +39,11 @@ const admin = [
     name: 'apps',
     label: 'Apps',
     component: () => import('@/views/apps/index.vue'),
-    meta:{
+    meta: {
       auth: true
     }
   }
 ]
-
 
 const router = new VueRouter({
   routes: admin

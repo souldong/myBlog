@@ -8,21 +8,23 @@
         <m-article :articleList="10"></m-article>
       </section>
       <aside>
-        <section>top10</section>
-        <section>标签</section>
+        <m-top :articleList="5"></m-top>
+        <m-tag></m-tag>
       </aside>
     </div>
   </div>
 </template>
 <script>
-import mArticle from '@/components/article.vue'
+import mArticle from './components/article.vue'
+import mTop from './components/top.vue'
+import mTag from './components/tag.vue'
 export default {
   components: {
-    mArticle
+    mArticle, mTop, mTag
   }
 }
 </script>
 
 <style lang="less" scoped>
-@import "../../styles/views/blog.less";
+ @import "../../styles/views/blog.less";
 </style>
