@@ -5,11 +5,18 @@
     </section>
     <section class="SE0fn">
       Music
+      <span @click="publish">写文章</span>
     </section>
   </div>
 </template>
 <script>
-export default {}
+export default {
+  methods: {
+    publish() {
+      this.$router.push({ path: 'write' })
+    }
+  }
+}
 </script>
 
 <style lang="less" scoped>

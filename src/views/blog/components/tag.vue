@@ -5,7 +5,7 @@
       <span class="text">Tags</span>
     </h1>
     <ul class="tag-container">
-      <li v-for="(item, index) in tags" :key="index"><a href="#" class="tag">{{item}}</a></li>
+      <li v-for="(item, index) in tags" :key="index"><a href="javascript:void(0)" class="tag">{{item}}</a></li>
     </ul>
   </section>
 </template>

@@ -13,10 +13,15 @@ Vue.use(VueParticles)
 Vue.use(ViewUI)
 Vue.config.productionTip = false
 router.beforeEach((to, from, next) => {
+  ViewUI.LoadingBar.start()
   if (to.meta.auth) {
     next('/home')
   }
   next()
+})
+
+router.afterEach(route => {
+  ViewUI.LoadingBar.finish()
 })
 
 new Vue({

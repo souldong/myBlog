@@ -1,15 +1,33 @@
 
 <template>
   <div class="layout">
-    <my-header></my-header>
-    <router-view></router-view>
+    <my-header v-show="isShowHead"></my-header>
+    <back-to-top></Back-to-top>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 <script>
 import MyHeader from '@/components/m-header.vue'
+import BackToTop from '@/components/back-to-top.vue'
 export default {
   components: {
-    MyHeader
+    MyHeader, BackToTop
+  },
+  data() {
+    return {
+      isShowHead: true
+    }
+  },
+  watch: {
+    $route(v) {
+      if (v.name === 'write') {
+        this.isShowHead = false
+      } else {
+        this.isShowHead = true
+      }
+    }
   }
 }
 </script>

@@ -35,6 +35,12 @@ const admin = [
     component: () => import('@/views/music/index.vue')
   },
   {
+    path: '/write',
+    name: 'write',
+    label: 'Write',
+    component: () => import('@/views/write-blog/index.vue')
+  },
+  {
     path: '/apps',
     name: 'apps',
     label: 'Apps',
